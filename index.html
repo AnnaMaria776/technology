@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Ako technológie menia ideál krásy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fcebe3, #fffaf5);
+      color: #4b2e2e;
+    }
+
+    .sidebar-left, .sidebar-right {
+      position: fixed;
+      top: 0;
+      width: 60px;
+      height: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        #d4a373,
+        #d4a373 10px,
+        #faedcd 10px,
+        #faedcd 20px
+      );
+      z-index: 1;
+    }
+
+    .sidebar-left { left: 0; }
+    .sidebar-right { right: 0; }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      background: #ffffffcc;
+      border-radius: 10px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      z-index: 2;
+      position: relative;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #6b4226;
+      animation: pop 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 700px;
+      border: 4px solid #caa77e;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .info {
+      padding: 1rem;
+      background: #f9f1e7;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .info h2 {
+      color: #8b5e3c;
+      border-bottom: 2px solid #caa77e;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #caa77e;
+      color: white;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar-left"></div>
+<div class="sidebar-right"></div>
+
+<div class="container">
+  <header>
+    <h1>Ako technológie menia ideál krásy</h1>
+  </header>
+
+  <div class="image-container">
+    <img src="motivacny_obrazok.jpg" alt="Motivačný obrázok: Sociálne siete vs. realita">
+  </div>
+
+  <div class="info">
+    <h2>O prezentácii</h2>
+    <p>Moderné technológie a sociálne siete menia naše vnímanie krásy. Mnohé online fotografie sú upravené a nereálne. Táto prezentácia poukazuje na rozdiel medzi tým, čo vidíme na sociálnych sieťach a skutočným životom.</p>
+
+    <h2>Pozvánka</h2>
+    <ul>
+      <li><strong>Dátum:</strong> 26. jún 2026</li>
+      <li><strong>Miesto:</strong> Učebňa č. 19, Gymnázium KNM</li>
+      <li><strong>Kontakt:</strong> technologie.vplyv@gmail.com</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  &copy; 2026 Anna Mária Rebeťáková – Ročníkový projekt
+</footer>
+
+</body>
+</html>
